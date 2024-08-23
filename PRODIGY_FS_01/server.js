@@ -5,10 +5,8 @@ const jwt = require('jsonwebtoken');
 const mongoose = require('mongoose');
 const path = require('path');
 
-// Connect to MongoDB
 mongoose.connect('mongodb://localhost/auth-system');
 
-// Define a User schema
 const userSchema = new mongoose.Schema({
     username: { type: String, required: true, unique: true },
     password: { type: String, required: true }
@@ -21,14 +19,12 @@ const PORT = 3005;
 const SECRET_KEY = 'your_secret_key';
 
 app.use(bodyParser.json());
-app.use(express.static(path.join(__dirname, 'public'))); // Serve static files from 'public'
+app.use(express.static(path.join(__dirname, 'public'))); 
 
-// Root Route
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'login.html'));
 });
 
-// Registration Endpoint
 app.post('/register', async (req, res) => {
     try {
         const { username, password } = req.body;
@@ -41,7 +37,7 @@ app.post('/register', async (req, res) => {
     }
 });
 
-// Login Endpoint
+
 app.post('/login', async (req, res) => {
     try {
         const { username, password } = req.body;
@@ -57,7 +53,7 @@ app.post('/login', async (req, res) => {
     }
 });
 
-// Protected Route Example
+
 app.get('/protected', (req, res) => {
     const token = req.headers['authorization'];
     if (!token) return res.status(401).json({ message: 'No token provided' });

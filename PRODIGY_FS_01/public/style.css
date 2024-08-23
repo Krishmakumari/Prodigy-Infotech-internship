@@ -1,0 +1,85 @@
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(to right, #26292a, #0a0a0a);
+  background-size: cover;
+  background-position: center;
+}
+
+/* Glass effect container */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+  padding: 30px;
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
+}
+
+/* Heading styles */
+h2 {
+  margin-top: 0;
+  color: #fff;
+  font-size: 2rem;
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Paragraph styles */
+p {
+  margin-top: 15px;
+  color: #ddd;
+  font-size: 1.1rem;
+}
+
+/* Input and button styles */
+input, button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  margin-top: 10px;
+  font-size: 1rem;
+  outline: none;
+}
+
+/* Button styles */
+button {
+  background: #0072ff;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background: #005bb5;
+  transform: translateY(-2px);
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}

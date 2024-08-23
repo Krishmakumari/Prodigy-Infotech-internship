@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(https://images.unsplash.com/photo-1493673272479-a20888bcee10?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover; /* Ensure the image covers the entire element */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repeating */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.glass-box {
+    display: flex;
+    align-items: center;
+    background: rgba(9, 9, 9, 0.1);
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 8px rgb(247, 243, 243);
+    padding: 35px;
+    max-width: 600px;
+    width: 100%;
+}
+
+.label {
+    flex: 1;
+    color: #fff;
+    font-size: 24px;
+    margin-right: 20px;
+}
+
+.form-box {
+    flex: 2;
+    backdrop-filter: blur(2px);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgb(255, 255, 255);
+    background: rgba(9, 9, 9, 0.1);
+    border-radius: 15px;
+    backdrop-filter: blur(25px);
+}
+
+h2 {
+    color: #fefcfc;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    color: #f6f1f1;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+p {
+    margin-top: 10px;
+    color: #f6f1f1;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

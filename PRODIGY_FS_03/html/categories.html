@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce site</title>
+    <link rel="stylesheet" href="../css/stylecategories.css">
+    <script src="../code/myscript.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="header">
+    <div class="logo">
+   
+    <img src="../assets/logo.png" alt="image" width="100" height="50"></div>
+    <div class="nav">
+    <ul>
+        <li><a href="C:/Users/Admin/Documents/Ecommerce%20Website/html/index.html">Home</a></li>
+        <li><a href="C:/Users/Admin/Documents/Ecommerce%20Website/html/categories.html">Categories</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#"><i class="bi bi-cart4 icon-cart">
+        <span>0</span></a></i></li>
+        <a href="C:/Users/Admin/Documents/Ecommerce%20Website/html/login.html" class="button">Login</a>
+        <a href="C:/Users/Admin/Documents/Ecommerce%20Website/html/signup.html" class="button">Sign Up</a>
+
+    </ul>
+    </div>
+    </div>
+
+
+    <div class="slider-container">
+        <div class="slider">
+            <img src="../assets/back11.avif" class="slide" alt="Slide 1" height="600px" width="500px">
+            <img src="../assets/back12.avif" class="slide" alt="Slide 2" height="600px" width="500px"> 
+            <img src="../assets/back13.avif" class="slide" alt="Slide 3" height="600px" width="500px"> 
+            <img src="../assets/back14.avif" class="slide" alt="Slide 4" height="600px" width="500px"> 
+            <div class="buttons">
+                <button class="category-button" onclick="scrollToSection('men')">Men</button>
+                <button class="category-button" onclick="scrollToSection('women')">Women</button>
+            </div>
+        </div>
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+        <div class="hello-text">
+            <center>
+                <p>We believe that <i>Good Design is always in Fashion</i></p>
+                <h1>CATEGORIES</h1>
+
+            </center>
+        </div>  
+    </div>
+    
+    <div class="banner">
+        <img style="object-fit: cover;" src="../assets/menbanner2.jpg" alt="img">
+        <div class="text-container">
+            <h2>MEN'S WEAR</h2>
+        </div>
+
+    </div>
+
+</div>
+<div class="men" id="men">
+
+
+
+    <div class="product-box" data-id="1">
+        <img src="../assets/men1.jpg" alt="img" data-original-src="../assets/men1.jpg" 
+        onmouseover="changeImage(this, '..../assets/men11.jpg')" onmouseout="restoreImage(this)">
+        <span>
+            <h3>Graphic Print Short Sleeve Shirts</h3>
+            <p>Price: $12.99</p>
+            <button class="add-to-cart" id="1" data-name="Graphic Print Short Sleeve Shirts"
+             data-price="12.99">Add to Cart</button>
+        </span>
+    </div>
+       
+        <div class="product-box" data-id="2">
+        <img src="../assets/men2.jpg" alt="img" data-original-src="../assets/men2.jpg" onmouseover="changeImage(this, '../assets/men21.jpg')" onmouseout="restoreImage(this)">
+        <span>
+            <h3>Short Sleeve Shirt With Jacket</h3>
+            <p>Price: $12.99</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </span>
+</div>
+<div class="product-box" data-id="3">
+        <img src="../assets/men3.jpg" alt="img" data-original-src="../assets/men3.jpg" onmouseover="changeImage(this, '../assets/men31.jpg')" onmouseout="restoreImage(this)">
+        <span>
+            <h3>Plain Short Sleeve Shirt</h3>
+            <p>Price: $12.99</p>
+            <button class="add-to-cart" data-id="1">Add to Cart</button>
+        </span>
+    </div>
+    <div class="product-box">
+        <img src="../assets/men4.jpg" alt="img" data-original-src="../assets/men4.jpg" onmouseover="changeImage(this, '../assets/men41.webp')" onmouseout="restoreImage(this)">
+        <span>
+            <h3>Black colored shirt</h3>
+            <p>Price: $12.99</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </span>
+    </div>
+    <div class="product-box">
+        <img src="../assets/men5.jpg" alt="img" data-original-src="../assets/men5.jpg" onmouseover="changeImage(this, '../assets/men51.webp')" onmouseout="restoreImage(this)">
+        <span>
+            <h3>Graphic Print Short Sleeve Shirts</h3>
+            <p>Price: $12.99</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </span>
+    </div>
+    <div class="product-box">
+        <img src="../assets/men6.jpg" alt="img" data-original-src="../assets/men6.jpg" onmouseover="changeImage(this, '../assets/men61.webp')" onmouseout="restoreImage(this)">
+        <span>
+            <h3>Graphic Print Short Sleeve Shirts</h3>
+            <p>Price: $12.99</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </span>
+    </div>
+    <div class="product-box">
+        <img src="../assets/men7.jpg" alt="img" data-original-src="../assets/men7.jpg" onmouseover="changeImage(this, '../assets/men7.webp')" onmouseout="restoreImage(this)">
+        <span>
+            <h3>Graphic Print Short Sleeve Shirts</h3>
+            <p>Price: $12.99</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </span>
+    </div>
+    <div class="product-box">
+        <img src="../assets/men8.jpg" alt="img" data-original-src="../assets/men8.jpg" onmouseover="changeImage(this, '../assets/men8.webp')" onmouseout="restoreImage(this)">
+        <span>
+            <h3>Graphic Print Short Sleeve Shirts</h3>
+            <p>Price: $12.99</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </span>
+    </div>
+    <div class="product-box">
+        <img src="../assets/men9.webp" alt="img" data-original-src="../assets/men9.webp" onmouseover="changeImage(this, '../assets/men91.webp')" onmouseout="restoreImage(this)">
+        <span>
+            <h3>Graphic Print Short Sleeve Shirts</h3>
+            <p>Price: $12.99</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </span>
+    </div>
+    <div class="product-box">
+        <img src="../assets/men10.webp" alt="img" data-original-src="../assets/men10.webp" onmouseover="changeImage(this, '../assets/men101.webp')"  onmouseout="restoreImage(this)">
+        <span>
+            <h3>Graphic Print Short Sleeve Shirts</h3>
+            <p>Price: $12.99</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </span>
+    </div>
+    <div class="product-box">
+        <img src="../assets/c1.webp" alt="img" data-original-src="../assets/c1.webp" onmouseover="changeImage(this, '../assets/c11.webp')"  onmouseout="restoreImage(this)">
+        <span>
+            <h3>Graphic Print Short Sleeve Shirts</h3>
+            <p>Price: $12.99</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </span>
+    </div>
+    <div class="product-box">
+        <img src="../assets/c2.webp" alt="img" data-original-src="../assets/c2.webp" onmouseover="changeImage(this, '../assets/c22.webp')"  onmouseout="restoreImage(this)">
+        <span>
+            <h3>Graphic Print Short Sleeve Shirts</h3>
+            <p>Price: $12.99</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </span>
+    </div>
+    <div class="product-box">
+        <img src="../assets/c3.webp" alt="img" data-original-src="../assets/c3.webp" onmouseover="changeImage(this, '../assets/c33.webp')"  onmouseout="restoreImage(this)">
+        <span>
+            <h3>Graphic Print Short Sleeve Shirts</h3>
+            <p>Price: $12.99</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </span>
+    </div>
+    <div class="product-box">
+        <img src="../assets/c4.webp" alt="img" data-original-src="../assets/c4.webp" onmouseover="changeImage(this, '../assets/c44.webp')"  onmouseout="restoreImage(this)">
+        <span>
+            <h3>Graphic Print Short Sleeve Shirts</h3>
+            <p>Price: $12.99</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </span>
+    </div>
+    <div class="product-box">
+        <img src="../assets/c5.webp" alt="img" data-original-src="../assets/c5.webp" onmouseover="changeImage(this, '../assets/c55.webp')"  onmouseout="restoreImage(this)">
+        <span>
+            <h3>Graphic Print Short Sleeve Shirts</h3>
+            <p>Price: $12.99</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </span>
+    </div>
+    <div class="product-box">
+        <img src="../assets/c6.webp" alt="img" data-original-src="../assets/c6.webp" onmouseover="changeImage(this, '../assets/c66.webp')"  onmouseout="restoreImage(this)">
+        <span>
+            <h3>Graphic Print Short Sleeve Shirts</h3>
+            <p>Price: $12.99</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </span>
+    </div>
+
+</div>
+
+
+
+<div class="bannerwomen">
+    <img src="../assets/womenbanner.jpg" alt="img">
+    <div class="womentext">
+        <h2>Feminine Attire</h2>
+    </div>
+
+</div>
+
+<div class="women" id="women">
+
+    <div class="product-box">
+        <img src="../assets/women1.webp" alt="img" data-original-src="../assets/women1.webp" onmouseover="changeImage(this, '../assets/women11.webp')" onmouseout="restoreImage(this)">
+        <span>
+            <h3>Graphic Print Short Sleeve Shirts</h3>
+            <p>Price: $12.99</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </span>
+        </div>
+
+        <div class="product-box">
+            <img src="../assets/women2.jpg" alt="img" data-original-src="../assets/women2.jpg" onmouseover="changeImage(this, '../assets/women22.jpg')" onmouseout="restoreImage(this)">
+            <span>
+                <h3>Graphic Print Short Sleeve Shirts</h3>
+                <p>Price: $12.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </span>
+            </div>
+            <div class="product-box">
+            <img src="../assets/women3.jpg" alt="img" data-original-src="../assets/women3.jpg" onmouseover="changeImage(this, '../assets/women33.jpg')" onmouseout="restoreImage(this)">
+            <span>
+                <h3>Graphic Print Short Sleeve Shirts</h3>
+                <p>Price: $12.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </span>
+            </div>
+
+            <div class="product-box">
+                <img src="../assets/women4.jpg" alt="img" data-original-src="../assets/women4.jpg" onmouseover="changeImage(this, '../assets/women44.jpg')" onmouseout="restoreImage(this)">
+                <span>
+                    <h3>Graphic Print Short Sleeve Shirts</h3>
+                    <p>Price: $12.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </span>
+                </div>
+
+                <div class="product-box">
+                    <img src="../assets/women5.jpg" alt="img" data-original-src="../assets/women5.jpg" onmouseover="changeImage(this, '../assets/women55.jpg')" onmouseout="restoreImage(this)">
+                    <span>
+                        <h3>Cotton Nylon String Skirt White</h3>
+                        <p>Price: $12.99</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </span>
+                    </div>
+                    <div class="product-box">
+                        <img src="../assets/women6.jpg" alt="img" data-original-src="../assets/women6.jpg" onmouseover="changeImage(this, '../assets/women66.jpg')" onmouseout="restoreImage(this)" >
+                        <span>
+                            <h3>Cotton Nylon String Skirt White</h3>
+                            <p>Price: $12.99</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </span>
+                        </div>
+                        <div class="product-box">
+                            <img src="../assets/women7.jpg" alt="img" data-original-src="../assets/women7.jpg" onmouseover="changeImage(this, '../assets/women77.jpg')" onmouseout="restoreImage(this)" >
+                            <span>
+                                <h3>Cotton Nylon String Skirt White</h3>
+                                <p>Price: $12.99</p>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </span>
+                            </div>
+
+                            <div class="product-box">
+                                <img src="../assets/women8.jpg" alt="img" data-original-src="../assets/women8.jpg" onmouseover="changeImage(this, '../assets/women88.jpg')" onmouseout="restoreImage(this)" >
+                                <span>
+                                    <h3>Cotton Nylon String Skirt White</h3>
+                                    <p>Price: $12.99</p>
+                                    <button class="add-to-cart">Add to Cart</button>
+                                </span>
+                                </div>
+                                <div class="product-box">
+                                    <img src="../assets/women9.jpg" alt="img" data-original-src="../assets/women9.jpg" onmouseover="changeImage(this, '../assets/women99.jpg')" onmouseout="restoreImage(this)" >
+                                    <span>
+                                        <h3>Cotton Nylon String Skirt White</h3>
+                                        <p>Price: $12.99</p>
+                                        <button class="add-to-cart">Add to Cart</button>
+                                    </span>
+                                    </div>
+                                    <div class="product-box">
+                                        <img src="../assets/women10.jpg" alt="img" data-original-src="../assets/women10.jpg" onmouseover="changeImage(this, '../assets/women101.jpg')" onmouseout="restoreImage(this)" >
+                                        <span>
+                                            <h3>Cotton Nylon String Skirt White</h3>
+                                            <p>Price: $12.99</p>
+                                            <button class="add-to-cart">Add to Cart</button>
+                                        </span>
+                                        </div>
+                                        <div class="product-box">
+                                            <img src="../assets/women11.jpg" alt="img" data-original-src="../assets/women11.jpg" onmouseover="changeImage(this, '../assets/women111.jpg')" onmouseout="restoreImage(this)" >
+                                            <span>
+                                                <h3>Cotton Nylon String Skirt White</h3>
+                                                <p>Price: $12.99</p>
+                                                <button class="add-to-cart">Add to Cart</button>
+                                            </span>
+                                            </div>
+                                            <div class="product-box">
+                                                <img src="../assets/women12.jpg" alt="img" data-original-src="../assets/women12.jpg" onmouseover="changeImage(this, '../assets/women121.jpg')" onmouseout="restoreImage(this)" >
+                                                <span>
+                                                    <h3>STRAIGHT-LEG HIGH-WAIST </h3>
+                                                    <p>Price: $12.99</p>
+                                                    <button class="add-to-cart">Add to Cart</button>
+                                                </span>
+                                                </div>
+
+
+
+        </div>
+
+    
+
+       
+<footer>
+    <div class="contact-container" id="contact">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+            <div class="contact-left-title">
+                <h2>GET IN TOUCH</h2>
+                <hr>
+            </div>
+            
+    <input type="hidden" name="access_key" value="4f75e609-70ff-450f-a102-bf97809ddae6">
+            <input type="text" name="name" placeholder="YOUR Name" class="contact-inputs" required>
+            <input type="text" name="email" placeholder="YOUR Email" class="contact-inputs" required>
+            <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div class="contact-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d109071.1851674331!2d75.55659238658504!3d31
+        .318265349596718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a5a5747a9eb91%3A0xc74b34c05aa5b4b8!2s
+        Jalandhar%2C%20Punjab!5e0!3m2!1sen!2sin!4v1713241031908!5m2!1sen!2sin" width="100%" height="auto" style="border:0;"
+         allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </footer>
+
+
+
+
+
+
+<div class="cartTab">
+    <h1>Shopping Cart</h1>
+    <div class="listCart">
+        
+    </div>
+    <div class="btn">
+        <button class="close">CLOSE</button>
+        <button class="checkOut">Check Out</button>
+    </div>
+</div>
+
+
+
+
+
+  <script>
+    let listProductHTML = document.querySelectorAll('.product-box');
+let listCartHTML = document.querySelector('.listCart');
+let iconCart = document.querySelector('.icon-cart');
+let iconCartSpan = document.querySelector('.icon-cart span');
+let body = document.querySelector('body');
+let closeCart = document.querySelector('.close');
+let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+const updateCartCount = () => {
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    let count = cart.reduce((total, item) => total + item.quantity, 0);
+    iconCartSpan.innerText = count;
+};
+
+// Call updateCartCount initially to set the initial count
+updateCartCount();
+
+iconCart.addEventListener('click', () => {
+    body.classList.toggle('showCart');
+});
+closeCart.addEventListener('click', () => {
+    body.classList.toggle('showCart');
+});
+
+listProductHTML.forEach(product => {
+    product.querySelector('.add-to-cart').addEventListener('click', () => {
+        let id_product = product.dataset.id;
+        addToCart(id_product);
+    });
+});
+
+let products = [
+    {
+        id: 1,
+        name: "Graphic Print Short Sleeve Shirts",
+        price: 12.99,
+        image: "../assets/men1.jpg",
+        hoverImage: "../assets/men11.jpg"
+    },
+    {
+        id: 2,
+        name: "Short Sleeve Shirt With Jacket",
+        price: 12.99,
+        image: "../assets/men2.jpg",
+        hoverImage: "../assets/men21.jpg"
+    },
+    {
+        id: 3,
+        name: "Plain Short Sleeve Shirt",
+        price: 50.99,
+        image: "../assets/men3.jpg",
+        hoverImage: "../assets/men31.jpg"
+    },
+    {
+        id: 4,
+        name: "Black colored shirt",
+        price: 15.3,
+        image: "../assets/men4.jpg",
+        hoverImage: "../assets/men41.webp"
+    },
+    {
+        id: 5,
+        name: "Graphic Print Short Sleeve Shirts",
+        price: 13.33,
+        image: "../assets/men5.jpg",
+        hoverImage: "../assets/men51.webp"
+    },
+    {
+        id: 6,
+        name: "Graphic Print Short Sleeve Shirts",
+        price: 13.33,
+        image: "../assets/men6.jpg",
+        hoverImage: "../assets/men61.webp"
+    },
+    {
+        id: 7,
+        name: "Graphic Print Short Sleeve Shirts",
+        price: 13.33,
+        image: "../assets/men7.webp",
+        hoverImage: "../assets/men7.jpg"
+    },
+    {
+        id: 8,
+        name: "Graphic Print Short Sleeve Shirts",
+        price: 13.33,
+        image: "../assets/men8.jpg",
+        hoverImage: "../assets/men81.jpg"
+    },
+    {
+        id: 9,
+        name: "Graphic Print Short Sleeve Shirts",
+        price: 13.33,
+        image: "../assets/men9.webp",
+        hoverImage: "../assets/men91.webp"
+    },
+    {
+        id: 10,
+        name: "Graphic Print Short Sleeve Shirts",
+        price: 13.33,
+        image: "../assets/men10.webp",
+        hoverImage: "../assets/men101.webp"
+    },
+    {
+        id: 11,
+        name: "Graphic Print Short Sleeve Shirts",
+        price: 13.33,
+        image: "../assets/c1.webp",
+        hoverImage: "../assets/c11.jpg"
+    },
+    {
+        id: 12,
+        name: "Graphic Print Short Sleeve Shirts",
+        price: 13.33,
+        image: "../assets/c2.webp",
+        hoverImage: "../assets/c2.jpg"
+    },
+    {
+        id: 13,
+        name: "Graphic Print Short Sleeve Shirts",
+        price: 13.33,
+        image: "../assets/c3.webp",
+        hoverImage: "../assets/c33.jpg"
+    },
+    {
+        id: 14,
+        name: "Graphic Print Short Sleeve Shirts",
+        price: 13.33,
+        image: "../assets/c4.webp",
+        hoverImage: "../assets/c44.jpg"
+    },
+    {
+        id: 15,
+        name: "Graphic Print Short Sleeve Shirts",
+        price: 13.33,
+        image: "../assets/c5.webp",
+        hoverImage: "../assets/c55.jpg"
+    },
+    {
+        id: 16,
+        name: "Graphic Print Short Sleeve Shirts",
+        price: 13.33,
+        image: "../assets/c6.webp",
+        hoverImage: "../assets/c66.jpg"
+    },
+    {
+        id: 17,
+        name: "Graphic Print Short Sleeve Shirts",
+        price: 13.33,
+        image: "../assets/women1.webp",
+        hoverImage: "../assets/women11.jpg"
+    },
+    {
+        id: 18,
+        name: "Graphic Print Short Sleeve Shirts",
+        price: 13.33,
+        image: "../assets/women2.jpg",
+        hoverImage: "../assets/women22.jpg"
+    },
+    {
+        id: 19,
+        name: "Graphic Print Short Sleeve Shirts",
+        price: 13.33,
+        image: "../assets/women3.jpg",
+        hoverImage: "../assets/women33.jpg"
+    },
+    {
+        id: 20,
+        name: "Graphic Print Short Sleeve Shirts",
+        price: 13.33,
+        image: "../assets/women4.jpg",
+        hoverImage: "../assets/women44.jpg"
+    },
+    {
+        id: 21,
+        name: "Graphic Print Short Sleeve Shirts",
+        price: 13.33,
+        image: "../assets/women5.jpg",
+        hoverImage: "../assets/women55.jpg"
+    },
+    {
+        id: 22,
+        name: "Graphic Print Short Sleeve Shirts",
+        price: 13.33,
+        image: "../assets/women6.jpg",
+        hoverImage: "../assets/women66.jpg"
+    },
+    {
+        id: 23,
+        name: "Graphic Print Short Sleeve Shirts",
+        price: 13.33,
+        image: "../assets/women7.jpg",
+        hoverImage: "../assets/women77.jpg"
+    },
+    {
+        id: 24,
+        name: "Graphic Print Short Sleeve Shirts",
+        price: 13.33,
+        image: "../assets/women8.jpg",
+        hoverImage: "../assets/women88.jpg"
+    },
+    {
+        id: 25,
+        name: "Graphic Print Short Sleeve Shirts",
+        price: 13.33,
+        image: "../assets/women9.jpg",
+        hoverImage: "../assets/women99.jpg"
+    },
+    {
+        id: 26,
+        name: "Graphic Print Short Sleeve Shirts",
+        price: 13.33,
+        image: "../assets/women10.jpg",
+        hoverImage: "../assets/women101.jpg"
+    },
+    {
+        id: 27,
+        name: "Graphic Print Short Sleeve Shirts",
+        price: 13.33,
+        image: "../assets/women11.jpg",
+        hoverImage: "../assets/women111.jpg"
+    },
+    {
+        id: 16,
+        name: "Graphic Print Short Sleeve Shirts",
+        price: 13.33,
+        image: "../assets/women12.jpg",
+        hoverImage: "../assets/women121.jpg"
+    }
+
+
+    // Add more product objects as needed
+];
+
+const addToCart = (product_id) => {
+    let positionThisProductInCart = cart.findIndex((value) => value.product_id === product_id);
+    if (cart.length <= 0) {
+        // If the cart is empty, add the product with quantity 1
+        cart = [{
+            product_id: product_id,
+            quantity: 1
+        }];
+    } else if (positionThisProductInCart < 0) {
+        // If the product is not already in the cart, add it with quantity 1
+        cart.push({
+            product_id: product_id,
+            quantity: 1
+        });
+    } else {
+        // If the product is already in the cart, increment its quantity by 1
+        cart[positionThisProductInCart].quantity += 1;
+    }
+    console.log("Cart after adding:", cart); // Add this line for debugging
+    addCartToHTML(); // Update the cart in HTML
+    addCartToMemory(); // Update the cart in memory/storage
+    updateCartCount(); // Update the displayed cart count
+};
+
+const addCartToMemory = () => {
+    localStorage.setItem('cart', JSON.stringify(cart));
+};
+
+const addCartToHTML = () => {
+    listCartHTML.innerHTML = '';
+    cart.forEach(item => {
+        let product = products.find(p => p.id == item.product_id);
+        let totalPrice = product.price * item.quantity; // Calculate the total price
+        let cartItem = document.createElement('div');
+        cartItem.classList.add('cart-item');
+        cartItem.innerHTML = `
+            <img src="${product.image}" alt="${product.name}">
+            <div>
+                <h4>${product.name}</h4>
+                <p>$${product.price} x ${item.quantity} = $${totalPrice.toFixed(2)}</p> <!-- Show the total price -->
+                <button class="minus" data-id="${product.id}">-</button>
+                <span>${item.quantity}</span>
+                <button class="plus" data-id="${product.id}">+</button>
+            </div>
+            <button class="remove" data-id="${product.id}">Remove</button>`;
+        listCartHTML.appendChild(cartItem);
+
+        // Add event listener for remove button
+        cartItem.querySelector('.remove').addEventListener('click', () => {
+            removeItemFromCart(product.id);
+        });
+    });
+};
+
+const removeItemFromCart = (productId) => {
+    let index = cart.findIndex(item => item.product_id == productId);
+    if (index !== -1) {
+        cart.splice(index, 1);
+        addCartToHTML();
+        addCartToMemory();
+        updateCartCount();
+    }
+};
+
+
+
+listCartHTML.addEventListener('click', (event) => {
+    let positionClick = event.target;
+    if (positionClick.classList.contains('minus') || positionClick.classList.contains('plus')) {
+        let product_id = positionClick.dataset.id;
+        let type = positionClick.classList.contains('plus') ? 'plus' : 'minus';
+        changeQuantityCart(product_id, type);
+    }
+});
+
+const changeQuantityCart = (product_id, type) => {
+    let positionItemInCart = cart.findIndex((value) => value.product_id == product_id);
+    if (positionItemInCart >= 0) {
+        switch (type) {
+            case 'plus':
+                cart[positionItemInCart].quantity++;
+                break;
+            case 'minus':
+                cart[positionItemInCart].quantity = Math.max(1, cart[positionItemInCart].quantity - 1);
+                if (cart[positionItemInCart].quantity === 1) {
+                    cart.splice(positionItemInCart, 1);
+                }
+                break;
+        }
+    }
+    addCartToHTML();
+    addCartToMemory();
+    updateCartCount();
+};
+
+// Initial setup
+ addCartToHTML();
+
+
+  </script>
+
+
+</body>
+</html>

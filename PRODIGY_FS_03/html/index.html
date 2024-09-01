@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce site</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../code/myscript.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+<body>
+ 
+    <div class="header">   
+        <div class="nav">
+        <div class="logo">
+            <img src="../assets/logo.png" alt="image" width="130" height="60">
+        </div>
+      
+            <ul>
+                <li><a href="C:/Users/Admin/Documents/Ecommerce%20Website/html/index.html">Home</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#arrival">New Arrival</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+                <a href="C:/Users/Admin/Documents/Ecommerce%20Website/html/login.html" class="button">Login</a>
+                <a href="C:/Users/Admin/Documents/Ecommerce%20Website/html/signup.html" class="button">Sign Up</a>
+            </ul>
+        </div>
+    </div>
+
+
+<div class="slider-container">
+    <div class="slider">
+      <img src="../assets/back1.jpg" class="slide" alt="Slide 1">
+      <img src="../assets/back2.avif" class="slide" alt="Slide 2" > 
+      <img src="../assets/back4.avif" class="slide" alt="Slide 2" > 
+      <img src="../assets/back6.avif" class="slide" alt="Slide 2" > 
+      <img src="../assets/back7.avif" class="slide" alt="Slide 2"> 
+      <img src="../assets/back8.avif" class="slide" alt="Slide 2" > 
+    </div>
+    <button class="prev" onclick="prevSlide()">&#10094;</button>
+    <button class="next" onclick="nextSlide()">&#10095;</button>
+    <div class="hello-text">
+        <center>
+        <h1>NEW FASHION </h1>
+        <h2>NEW COLLECTION</h2>
+        <p>Look at the sunset,life is amazing,life is beautiful,Life is what you make it</p>
+        </center>
+    </div>  
+</div>
+
+
+
+<div class="back">
+<div class="image-container">
+<div class="card">
+    <div class="card__inner">
+        <div class="card__face card__face--front">
+            <img src="../assets/banner1.jpg" alt="img" >
+        </div>
+        <div class="card__face card__face--back">
+            <div class="card__content">
+                <div class="card__header">
+                </div>
+                <div class="card__body">
+                    <h2>GET UPTO 50% OFF!!!</h2>
+                    <p>Lorem ipsum <strong>dolor</strong> sit amet, consectetur <strong>adipiscing</strong> elit. Sed id erat a magna lobortis dictum. Nunc est arcu, <strong>lacinia</strong> quis sapien placerat, <strong>laoreet</strong> tincidunt nulla.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+<div class="card">
+    <div class="card__inner">
+        <div class="card__face card__face--front">
+            <img src="../assets/banner2.jpg" alt="img" >
+        </div>
+        <div class="card__face card__face--back">
+            <div class="card__content">
+                <div class="card__header">
+                </div>
+                <div class="card__body">
+                    <h2>GET UPTO 50% OFF!!!</h2>
+                    <p>Lorem ipsum <strong>dolor</strong> sit amet, consectetur <strong>adipiscing</strong> elit. Sed id erat a magna lobortis dictum. Nunc est arcu, <strong>lacinia</strong> quis sapien placerat, <strong>laoreet</strong> tincidunt nulla.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<center>
+<div class="write">
+    <img src="../assets/logo.png" alt="img" height="100px" width="250px"><br><br><br>
+    <pre>"Discover the Joy of Seamless Shopping 
+        – Where Convenience Meets Style!"</pre>
+    </div>
+    </center>
+</div>
+<div class="categories" id="categories"><center>
+    <h1>CATEGORIES</h1></center>
+</div>
+
+<div class="banner-container">
+    <div class="banner">
+        <img src="../assets/menbanner.jpg" alt="Men's Clothes Banner">
+        <div class="text-container">
+            <h3>Shop By</h3>
+            <h2>MEN'S CLOTHES</h2>
+        </div>
+        <button class="shop-button"><a href="file:///C:/Users/Admin/Documents/Ecommerce%20Website/html/categories.html">Shop Now</a></button>
+    </div>
+    <div class="banner">
+        <img src="../assets/back2.avif" alt="Women's Clothes Banner">
+        <div class="text-container">
+            <h3>Shop By</h3>
+            <h2>WOMEN'S CLOTHES</h2>
+        </div>
+        <button class="shop-button"><a href="file:///C:/Users/Admin/Documents/Ecommerce%20Website/html/categories.html">Shop Now</a></button>
+    </div>
+</div>
+
+
+
+<div class="arrival" id="arrival">
+    <center>
+        <h1>NEW ARRIVALS!!</h1>
+    </center>
+    <div class="product-box">
+        <img src="../assets/arrival2.jpg" alt="img" data-original-src="../assets/arrival2.jpg" onmouseover="changeImage(this, '../assets/arrival21.jpg')" onmouseout="restoreImage(this)">
+        <span>
+            <h3>Long Square Neck Short Dresses</h3>
+            <p>Price: $12.99</p>
+        </span>
+    </div>
+
+    <div class="product-box">
+        <img src="../assets/arrival.jpg" alt="img" data-original-src="../assets/arrival.jpg" onmouseover="changeImage(this, '../assets/arrival11.jpg')" onmouseout="restoreImage(this)">
+        <span>
+            <h3>Long Square Neck Short Dresses</h3>
+            <p>Price: $12.99</p>
+        </span>
+    </div>
+
+    <div class="product-box">
+        <img src="../assets/arrival3.jpg" alt="img" data-original-src="../assets/arrival3.jpg" onmouseover="changeImage(this, '../assets/arrival31.jpg')" onmouseout="restoreImage(this)">
+        <span>
+            <h3>Long Square Neck Short Dresses</h3>
+            <p>Price: $12.99</p>
+
+        </span>
+    </div>
+
+    <div class="product-box">
+        <img src="../assets/arrival4.webp" alt="img" data-original-src="../assets/arrival4.webp" onmouseover="changeImage(this, '../assets/arrival41.webp')" onmouseout="restoreImage(this)">
+        <span>
+            <h3>Butterfly Print Lined Hoodie</h3>
+            <p>Price: $12.5</p>
+    
+        </span>
+    </div>
+    <!-- <div class="product-box">
+        <img src="../assets/arrival5.webp" alt="img" data-original-src="../assets/arrival5.webp" onmouseover="changeImage(this, '../assets/arrival51.webp')" onmouseout="restoreImage(this)">
+        <span>
+            <h3>Butterfly Print Lined Hoodie</h3>
+            <p>Price: $12.5</p>
+
+        </span>
+    </div> -->
+</div>
+
+<div class="heading-section">
+    <div class="heading-item">
+        <p>Free Shipping</p>
+        <p>(above $30 shopping)</p>
+    </div>
+    <div class="heading-item">
+        <p>Easy Returns</p>
+    </div>
+    <div class="heading-item">
+        <p>Upto 30% Savings</p>
+    </div>
+    <div class="heading-item">
+        <p>Better Quality</p>
+    </div>
+</div>
+       
+<footer>
+    <div class="contact-container" id="contact">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+            <div class="contact-left-title">
+                <h2>GET IN TOUCH</h2>
+                <hr>
+            </div>
+            
+    <input type="hidden" name="access_key" value="4f75e609-70ff-450f-a102-bf97809ddae6">
+            <input type="text" name="name" placeholder="YOUR Name" class="contact-inputs" required>
+            <input type="text" name="email" placeholder="YOUR Email" class="contact-inputs" required>
+            <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div class="contact-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d109071.1851674331!2d75.55659238658504!3d31
+        .318265349596718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a5a5747a9eb91%3A0xc74b34c05aa5b4b8!2s
+        Jalandhar%2C%20Punjab!5e0!3m2!1sen!2sin!4v1713241031908!5m2!1sen!2sin" width="100%" height="auto" style="border:0;"
+         allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </footer>
+
+
+  
+  
+
+
+</body>
+</html> 

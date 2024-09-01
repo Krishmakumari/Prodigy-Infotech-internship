@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login</title>
+<style>
+/* Your CSS styles */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../assets/login.avif');
+    background-size: cover;
+    }
+    form {
+    background-color: rgba(113, 108, 116, 0.5); /* Transparent white */
+    padding: 20px;
+    border-radius: 8px;
+    
+    backdrop-filter: blur(3px);
+    box-shadow: 0 0 10px rgba(238, 217, 217, 0.1);
+    width: 300px;
+    position: relative;
+    height: 330px;
+    }
+    h2 {
+    text-align: center;
+    color: white;
+    }
+    label {
+    display: block;
+    margin-bottom: 10px;
+    color: white;
+    }
+    input {
+    display: block;
+    margin-bottom: 10px;
+    color: black;
+    }
+    input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #100f0f;
+    border-radius: 4px;
+    box-sizing: border-box;
+    }
+    button {
+    background-color: #c31e1b;
+    color: rgb(247, 246, 246);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    }
+    button:hover {
+    background-color: #fa2e0a;
+    }
+    .message {
+    text-align: center;
+    color: white;
+    }
+    .dont-have-account {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    }
+
+  .link {
+  position: fixed;
+  top: 20px;
+  left: 70%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+
+.link a {
+  color: white;
+  display: inline-block;
+  text-align: center;
+}
+
+</style>
+</head>
+<body>
+    <div class="link">
+        <a href="file:///C:/Users/Admin/Documents/Ecommerce%20Website/html/index.html"> Home Page</a>
+      </div>
+      
+<form id="loginForm" action="/loggedin" method="post" onsubmit="showMessage(event)">
+<h2>Login</h2>
+<label for="username">Username:</label>
+<input type="text" id="username" name="username" required>
+<label for="password">Password:</label>
+<input type="password" id="password" name="password" required>
+<button type="submit">Login</button>
+<p class="dont-have-account">Don't have an account? <a href="file:///C:/Users/Admin/Documents/Ecommerce%20Website/html/signup.html" style="color:white;">Sign Up</a></p>
+</form>
+<p id="message" class="message" style="display: none;">Login successful!</p>
+
+
+
+</body>
+</html>
